@@ -18,7 +18,7 @@ body {
 .main-container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 10fr;
 }
 
 /* sidebar */
@@ -37,7 +37,11 @@ body {
 }
 
 div.icon-container > p {
-  font-size: 25px;
+  font-size: 30px;
+}
+
+div.icon-container > svg {
+  box-shadow: 1px 2px 19px #8b5cf6;
 }
 
 .n-container,
@@ -47,7 +51,7 @@ div.icon-container > p {
   align-items: center;
 }
 
-svg {
+div > svg {
   color: #f0f9ff;
   margin-right: 10px;
 }
@@ -58,17 +62,92 @@ svg {
   grid-column: 2/3;
 
   display: grid;
-  grid-template-rows: 1.5fr 2fr;
+  grid-template-rows: 1fr 2fr;
 }
 
+/* search container */
 .search-container {
   display: grid;
-  grid-template-columns: auto 200px;
+  grid-template-columns: auto 300px;
+  align-items: center;
 }
 
+.search-bar-container {
+  display: grid;
+  grid-template-columns: 50px auto;
+
+  padding: 20px 50px;
+}
+
+.search-input {
+  border-radius: 15px;
+  border: 2px solid #5b21b6;
+}
+
+div.search-bar-container > svg {
+  color: grey;
+}
+
+/* profile container */
 .profile-container {
   display: grid;
-  grid-template-columns: auto 400px;
+  grid-template-columns: auto 350px;
+}
+
+.greeting {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.greeting > svg {
+  color: grey;
+}
+
+.profile-pic {
+  height: 40px;
+  border-radius: 50%;
+  margin: 0px 20px;
+}
+
+/* second line header */
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+div.account > p {
+  font-size: medium;
+}
+
+div.account > h1 {
+  font-size: large;
+}
+
+div.profile-pic > img {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.ops-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn {
+  height: 35px;
+  width: 80px;
+  background-color: #5b21b6;
+  margin: 0 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50px;
+
+  font-size: small;
 }
 
 /* dashboard */
