@@ -1,0 +1,78 @@
+.br {
+  border: 1px solid red;
+}
+
+.bl {
+  border: 1px solid blue;
+}
+
+/* papa container */
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+/* sidebar */
+.sidebar {
+  border: 1px solid red;
+  grid-row: 1 / 3;
+
+  display: grid;
+  grid-template-rows: 75px 2fr 1fr auto;
+  gap: 50px;
+}
+
+.home-navigation {
+  border: 1px solid red;
+}
+
+.settings-navigation {
+  border: 1px solid red;
+}
+
+/* header */
+.header {
+  border: 1px solid red;
+  grid-column: 2/3;
+
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: auto 200px;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: auto 400px;
+}
+
+/* dashboard */
+.dashboard-container {
+  border: 1px solid red;
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  display: grid;
+  grid-template-columns: auto 300px;
+}
+
+/* projects */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.title-projects {
+  grid-column: 1 /3;
+}
+
+/*announcement */
+.announcements-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
