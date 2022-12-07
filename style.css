@@ -2,6 +2,8 @@ body {
   font-family: Roboto;
   margin: 0;
   padding: 0;
+
+  background-color: white;
 }
 
 /* styling */
@@ -18,7 +20,7 @@ body {
 .main-container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 10fr;
+  grid-template-rows: 180px 10fr;
 }
 
 /* sidebar */
@@ -41,7 +43,7 @@ div.icon-container > p {
 }
 
 div.icon-container > svg {
-  box-shadow: 1px 2px 19px #8b5cf6;
+  box-shadow: 1px 5px 10px #8b5cf6;
 }
 
 .n-container,
@@ -58,11 +60,13 @@ div > svg {
 
 /* header */
 .header {
-  border: 1px solid red;
   grid-column: 2/3;
 
   display: grid;
   grid-template-rows: 1fr 2fr;
+
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 /* search container */
@@ -152,10 +156,10 @@ div.profile-pic > img {
 
 /* dashboard */
 .dashboard-container {
-  border: 1px solid red;
   grid-column: 2/3;
   grid-row: 2/3;
   column-gap: 15px;
+  padding: 20px;
 
   display: grid;
   grid-template-columns: auto 300px;
@@ -170,7 +174,8 @@ div.profile-pic > img {
 }
 
 div.projects-wrapper > p,
-div.announcements-wrapper > p {
+div.announcements-wrapper > p,
+div.trending-wrapper > p {
   font-weight: bold;
   margin-left: 10px;
   font-size: 20px;
@@ -190,7 +195,7 @@ div.announcements-wrapper > p {
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 2px 1px 10px rgb(125, 125, 125);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   position: relative;
 }
@@ -218,6 +223,7 @@ div.announcements-wrapper > p {
 .announcements-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  gap: 20px;
 }
 
 .announcements {
@@ -229,7 +235,7 @@ div.announcements-wrapper > p {
   margin: 10px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 1px 10px rgb(125, 125, 125);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .section {
@@ -252,6 +258,35 @@ div.announcements-wrapper > p {
   font-size: medium;
 }
 
+/*trending*/
+
 .trending {
-  height: 300px;
+  height: 200px;
+
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.section-trending {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.section-trending > img {
+  height: 40px;
+
+  margin: auto;
+}
+
+.section-trending > p {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 12px;
 }
